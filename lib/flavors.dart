@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 enum Flavor {
   simpsonsviewer,
   wireviewer,
@@ -15,18 +17,40 @@ class F {
       case Flavor.wireviewer:
         return 'The Wire Character Viewer';
       default:
-        return 'title';
+        return 'Test';
     }
   }
 
   static String get placeholderUrl {
     switch (appFlavor) {
       case Flavor.simpsonsviewer:
-        return 'https://cdn.vox-cdn.com/thumbor/lgOlyWAT77mWdutFCRS7k3m5KKI=/297x81:1426x928/1200x800/filters:focal(297x81:1426x928)/cdn.vox-cdn.com/uploads/chorus_image/image/35880068/simpsons.0.png';
+        return 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_GAhF3dWD9XAUCnXj7CW7q95OaHHO9O7B7sXtHdr-tWK9FYdWkanAhx1HXpK_g_64NI&usqp=CAU';
       case Flavor.wireviewer:
         return 'https://static01.nyt.com/images/2008/03/10/arts/wiresec.jpg';
       default:
-        return 'title';
+        return 'https://static01.nyt.com/images/2008/03/10/arts/wiresec.jpg';
+    }
+  }
+
+  static ThemeData get theme {
+    switch (appFlavor) {
+      case Flavor.simpsonsviewer:
+        return ThemeData(primarySwatch: Colors.yellow);
+      case Flavor.wireviewer:
+        return ThemeData(primarySwatch: Colors.grey);
+      default:
+        return ThemeData(primarySwatch: Colors.blue); // Fallback theme
+    }
+  }
+
+  static String get searchHint {
+    switch (appFlavor) {
+      case Flavor.simpsonsviewer:
+        return 'Homer Simpson';
+      case Flavor.wireviewer:
+        return 'Omar Little';
+      default:
+        return 'Enter a selection';
     }
   }
 }
