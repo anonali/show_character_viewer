@@ -56,7 +56,7 @@ cd ..
 dart run build_runner build
 ```
 ```dart
-dart run flutter_flavoriz
+dart run flutter_flavorizr
 ```
 
 
