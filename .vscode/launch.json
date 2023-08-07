@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "simpsonsviewer Debug",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": ["--dart-define-from-file=config_simpsons_viewer.json", "--flavor", "simpsonsviewer"],
+        "program": "lib/main_simpsonsviewer.dart"
+      },
+      {
+        "name": "simpsonsviewer Profile",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["--dart-define-from-file=config_simpsons_viewer.json", "--flavor", "simpsonsviewer"],
+        "program": "lib/main_simpsonsviewer.dart"
+      },
+      {
+        "name": "simpsonsviewer Release",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["--dart-define-from-file=config_simpsons_viewer.json", "--flavor", "simpsonsviewer"],
+        "program": "lib/main_simpsonsviewer.dart"
+      },
+      {
+        "name": "wireviewer Debug",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": ["--dart-define-from-file=config_wire_viewer.json", "--flavor", "wireviewer"],
+        "program": "lib/main_wireviewer.dart"
+      },
+      {
+        "name": "wireviewer Profile",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["--dart-define-from-file=config_wire_viewer.json", "--flavor", "wireviewer"],
+        "program": "lib/main_wireviewer.dart"
+      },
+      {
+        "name": "wireviewer Release",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["--dart-define-from-file=config_wire_viewer.json", "--flavor", "wireviewer"],
+        "program": "lib/main_wireviewer.dart"
+      }
+    ]
+  }
+  
