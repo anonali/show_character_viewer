@@ -12,7 +12,12 @@ A casual "TV show character" browsing app that securely deploys onto both iOS an
 - Sliver listview supports refreshing, just drag down on the list and then release.
 - When a list is fetched, it is cached until no longer needed.
 - Repository to handle all the networking, including services to process data before showing to user as APIs do not return clean and clear data. 
--Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future. 
+-Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future.
+
+
+ - I am using the Flutter Flavorizr package to handle the app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
+ - I elected not to pass the API urls by hardcoding with this package and instead created two respective config.json files which I pass using --dart-define-from-file as an argument at compile time.
+ - Some other packages heavily used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using code generation for model classes as witnessed by the widespread usage of the Freezed package.
 
 
 
