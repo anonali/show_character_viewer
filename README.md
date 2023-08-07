@@ -1,5 +1,7 @@
 
+
 # Show Character Viewer
+
 
 A casual "TV show character" browsing app that securely deploys onto both iOS and Android using different build configurations & flavors 
 
@@ -15,12 +17,6 @@ A casual "TV show character" browsing app that securely deploys onto both iOS an
 -Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future.
 
 
- - I am using the Flutter Flavorizr package to handle the app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
- - I elected not to pass the API urls by hardcoding with this package and instead created two respective config.json files which I pass using --dart-define-from-file as an argument at compile time.
- - Some other packages heavily used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using code generation for model classes as witnessed by the widespread usage of the Freezed package.
-
-
-
 
 ## Installation
 
@@ -33,6 +29,7 @@ or
 ```dart
 flutter run --flavor wireviewer -t lib/main_wireviewer.dart --dart-define-from-file=config_wire_viewer.json
 ```
+
 
 
 ## Troubleshooting
@@ -61,6 +58,14 @@ dart run build_runner build
 ```dart
 dart run flutter_flavoriz
 ```
+
+
+## Notes
+- I am using the Flutter Flavorizr package to handle the app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
+- I elected not to pass the API urls by hardcoding with this package and instead created two respective config.json files which I pass using --dart-define-from-file as an argument at compile time.
+- Some other packages heavily used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using code generation for model classes as witnessed by the widespread usage of the Freezed package.
+
+
 
 ## Contributing
 
