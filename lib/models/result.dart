@@ -42,7 +42,6 @@ class Result<T> with _$Result<T> {
     return when(
       data: (value) => value,
       error: (err, stack) {
-        // ignore: only_throw_errors
         throw err;
       },
     );
