@@ -14,7 +14,7 @@ A casual "TV show character" browsing app that securely deploys onto both iOS an
 - Sliver listview supports refreshing, just drag down on the list and then release.
 - When a list is fetched, it is cached until no longer needed. Scroll to refresh.
 - Repository to handle all the networking, including services to process data before showing to user as APIs do not return clean and clear data. 
--Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future.
+- Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future.
 
 
 
