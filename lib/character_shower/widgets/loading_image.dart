@@ -5,8 +5,8 @@ import 'package:show_characters_viewer/flavors.dart';
 class LoadingImage extends StatelessWidget {
   // Constructor to accept the image URL.
   const LoadingImage({
-    Key? key,
     required this.url,
+    Key? key,
   }) : super(key: key);
 
   // URL of the image to be displayed.

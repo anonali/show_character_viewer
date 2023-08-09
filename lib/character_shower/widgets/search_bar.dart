@@ -5,15 +5,16 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart'
     hide Icon;
 
-// Define the appearance and behavior of the search bar when focused and unfocused.
+// Define the appearance and behavior of the search bar
+// when focused and unfocused.
 class _SearchTheme {
   const _SearchTheme({
     required this.width,
-    // ignore: unused_element, blocked by https://github.com/dart-lang/linter/issues/3232
-    this.height = 300,
     required this.searchDecoration,
     required this.iconPadding,
     required this.searchMargin,
+    // ignore: unused_element, blocked by https://github.com/dart-lang/linter/issues/3232
+    this.height = 300,
   });
 
   final double width;
@@ -160,8 +161,8 @@ class SearchBar extends HookConsumerWidget {
 // Widget to display search hints based on the user's query.
 class _SearchHints extends HookConsumerWidget {
   const _SearchHints({
-    Key? key,
     required this.textEditingController,
+    Key? key,
   }) : super(key: key);
 
   final TextEditingController textEditingController;
@@ -228,9 +229,9 @@ class _SearchHints extends HookConsumerWidget {
 // TODO: Update queries and filter the list based on names being queries first in the list and then queries containing matching data in description after
 class _SearchHintContainer extends StatelessWidget {
   const _SearchHintContainer({
-    Key? key,
     required this.theme,
     required this.child,
+    Key? key,
   }) : super(key: key);
 
   final _SearchTheme theme;
@@ -260,11 +261,11 @@ class _SearchHintContainer extends StatelessWidget {
 
 class _SearchbarView extends StatelessWidget {
   const _SearchbarView({
-    Key? key,
     required this.theme,
     required this.isFocused,
     required this.textEditingController,
     required this.textFocusNode,
+    Key? key,
   }) : super(key: key);
 
   final _SearchTheme theme;

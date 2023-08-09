@@ -1,6 +1,6 @@
-import 'flavors.dart';
+import 'package:show_characters_viewer/flavors.dart';
 
-import 'main.dart' as runner;
+import 'package:show_characters_viewer/main.dart' as runner;
 
 Future<void> main() async {
   F.appFlavor = Flavor.development;
