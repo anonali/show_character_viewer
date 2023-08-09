@@ -52,13 +52,15 @@ class SelectedCharacterNotifier extends StateNotifier<String?> {
 
 final selectedCharacterProvider =
     StateNotifierProvider<SelectedCharacterNotifier, String?>(
-        (ref) => SelectedCharacterNotifier());
+  (ref) => SelectedCharacterNotifier(),
+);
 
 // Widget layout specifically designed for tablets.
 
-// A custom SliverAppBar that changes its title color based on the scroll offset.
+// A custom SliverAppBar that changes its title color based on the
+// scroll offset.
 class AnimatedColorSliverAppBar extends HookWidget {
-  const AnimatedColorSliverAppBar({Key? key, required this.scrollController})
+  const AnimatedColorSliverAppBar({required this.scrollController, Key? key})
       : super(key: key);
 
   final ScrollController scrollController;
@@ -76,17 +78,18 @@ class AnimatedColorSliverAppBar extends HookWidget {
           expandedHeight: 200,
           flexibleSpace: FlexibleSpaceBar(
             title: SizedBox(
-                height: 40,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    F.title,
-                    style: TextStyle(
-                      color: color, // Adjusted color fading here
-                      fontSize: 18,
-                    ),
+              height: 40,
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: Text(
+                  F.title,
+                  style: TextStyle(
+                    color: color, // Adjusted color fading here
+                    fontSize: 18,
                   ),
-                )),
+                ),
+              ),
+            ),
             centerTitle: true,
             background: Image.network(
               F.placeholderUrl,
@@ -105,10 +108,9 @@ class AnimatedColorSliverAppBar extends HookWidget {
 
 // A SliverList widget to display the list of characters.
 class CharacterSliverList extends ConsumerWidget {
-  final int itemCount;
-
-  const CharacterSliverList({Key? key, required this.itemCount})
+  const CharacterSliverList({required this.itemCount, Key? key})
       : super(key: key);
+  final int itemCount;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -128,7 +130,8 @@ class CharacterSliverList extends ConsumerWidget {
   }
 }
 
-// The main Home widget that displays either a loading spinner, error message, or the list of characters.
+// The main Home widget that displays either a loading spinner, error message,
+// or the list of characters.
 class Home extends HookConsumerWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -138,7 +141,7 @@ class Home extends HookConsumerWidget {
 
     return ref.watch(charactersProvider).when(
           loading: () => Container(
-            color: Colors.white,
+            color: F.theme.primaryColorDark,
             child: const Center(child: CircularProgressIndicator()),
           ),
           error: (err, stack) {
@@ -165,9 +168,11 @@ class Home extends HookConsumerWidget {
                     controller: scrollController,
                     slivers: [
                       AnimatedColorSliverAppBar(
-                          scrollController: scrollController),
+                        scrollController: scrollController,
+                      ),
                       CharacterSliverList(
-                          itemCount: charactersListResponse.characters.length),
+                        itemCount: charactersListResponse.characters.length,
+                      ),
                     ],
                   ),
                 ),
