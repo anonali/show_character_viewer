@@ -17,7 +17,9 @@ class AbortedException implements Exception {}
 final charactersProvider = FutureProvider.autoDispose<CharactersListResponse>(
   (ref) async {
     final repository = ref.watch(repositoryProvider);
-    return await repository.fetchCharacters();
+    return
+        // await // if live network call
+        repository.fetchCharacters();
   },
 );
 

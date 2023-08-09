@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
 import 'package:show_characters_viewer/l10n/l10n.dart';
 
 class App extends HookConsumerWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -54,15 +53,16 @@ class App extends HookConsumerWidget {
   }) =>
       show
           ? Banner(
-              child: child,
               location: BannerLocation.topStart,
               message: F.name,
               color: Colors.green.withOpacity(0.6),
               textStyle: const TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 12.0,
-                  letterSpacing: 1.0),
+                fontWeight: FontWeight.w700,
+                fontSize: 12,
+                letterSpacing: 1,
+              ),
               textDirection: TextDirection.ltr,
+              child: child,
             )
           : Container(
               child: child,
@@ -75,9 +75,8 @@ class App extends HookConsumerWidget {
 /// entire application.
 class _Unfocus extends HookConsumerWidget {
   const _Unfocus({
-    Key? key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget child;
 

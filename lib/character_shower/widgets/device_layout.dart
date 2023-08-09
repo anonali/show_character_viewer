@@ -12,7 +12,7 @@ class DeviceLayout extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final deviceService = ref.watch(deviceServiceProvider);
-    bool isMobileDevice = deviceService.isMobileDevice();
+    final isMobileDevice = deviceService.isMobileDevice();
 
     if (isMobileDevice) {
       return const Portal(child: Home());
