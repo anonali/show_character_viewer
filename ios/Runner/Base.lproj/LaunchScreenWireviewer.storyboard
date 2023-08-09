@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImageWireviewer" width="2560" height="1920"/>
+        <image name="LaunchImageWireviewer" width="1024" height="1024"/>
         <image name="LaunchBackgroundWireviewer" width="1" height="1"/>
     </resources>
 </document>
