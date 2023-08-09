@@ -6,6 +6,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/data/character_shower_models.dart';
 
 // URL for the API endpoint, retrieved from environment variables.
+// ignore: constant_identifier_names
 const APIURL = String.fromEnvironment('CHARACTER_VIEWER_API');
 
 // Provider for the Dio HTTP client.
