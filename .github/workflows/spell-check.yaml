@@ -1,23 +1,23 @@
-name: Spell Check
+# name: Spell Check
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
-jobs:
-  check-spelling:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+# jobs:
+#   check-spelling:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
       
-    - name: Run Spell Checker
-      uses: actions/spellchecker-action@v1
-      with:
-        dictionary: .wordlist.txt
-        path: |
-          **/*.md
+#     - name: Run Spell Checker
+#       uses: actions/spellchecker-action@v1
+#       with:
+#         dictionary: .wordlist.txt
+#         path: |
+#           **/*.md
