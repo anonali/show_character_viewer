@@ -6,6 +6,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/data/character_shower_models.dart';
 
 // URL for the API endpoint, retrieved from environment variables.
+// ignore: constant_identifier_names
 const APIURL = String.fromEnvironment('CHARACTER_VIEWER_API');
 
 // Provider for the Dio HTTP client.
@@ -96,6 +97,9 @@ class CharacterRepository {
       const url = APIURL;
       // Make the API request using the Dio client.
       final result =
+
+          // TODO: consider refactoring
+          // ignore: inference_failure_on_function_invocation
           await ref.read(dioProvider).get(url, cancelToken: cancelToken);
 
       Map<String, dynamic> responseData;
@@ -107,7 +111,9 @@ class CharacterRepository {
       } else if (result.data is Map<String, dynamic>) {
         responseData = result.data as Map<String, dynamic>;
       } else {
-        throw Exception("Unexpected data type: ${result.data.runtimeType}");
+        // TODO: consider refactoring
+        // ignore: avoid_dynamic_calls
+        throw Exception('Unexpected data type: ${result.data.runtimeType}');
       }
 
       return CharacterResponse.fromJson(responseData);

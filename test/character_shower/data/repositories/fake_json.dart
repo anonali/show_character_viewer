@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_string_escapes, lines_longer_than_80_chars
+
 const mockResponseData = {
   'Abstract': '',
   'AbstractSource': 'Wikipedia',

@@ -1,3 +1,5 @@
+// ignore_for_file: invalid_annotation_target
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
@@ -46,11 +48,11 @@ class NewCharacter with _$NewCharacter {
   // Factory constructor to create a NewCharacter from a RelatedTopic object.
   factory NewCharacter.fromRelatedTopic(RelatedTopic relatedTopic) {
     // Extracts the name and description from the related topic text.
-    List<String> parts = relatedTopic.text.split(' - ');
-    String name = parts[0];
-    String description = parts.length > 1 ? parts[1] : "";
-    String imageUrl = "https://duckduckgo.com${relatedTopic.icon.url ?? ''}";
-    if (imageUrl == "https://duckduckgo.com") {
+    final parts = relatedTopic.text.split(' - ');
+    final name = parts[0];
+    final description = parts.length > 1 ? parts[1] : '';
+    var imageUrl = "https://duckduckgo.com${relatedTopic.icon.url ?? ''}";
+    if (imageUrl == 'https://duckduckgo.com') {
       imageUrl = F.placeholderUrl;
     }
 

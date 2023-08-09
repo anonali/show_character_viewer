@@ -46,23 +46,26 @@ class CharacterView extends HookConsumerWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8),
                         child: Container(
                           width: double.infinity,
                           padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
                           decoration: BoxDecoration(
                             color: Colors.black.withOpacity(
-                                0.6), // semi-transparent background
+                              0.6,
+                            ), // semi-transparent background
                             borderRadius:
                                 BorderRadius.circular(15), // Rounded edges
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8),
                             child: Text(
                               character.description ??
                                   'Sorry, no description available...',
                               style: const TextStyle(
-                                  fontSize: 16.0, color: Colors.white),
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
                               maxLines: 10,
                               overflow: TextOverflow.ellipsis,
                             ),

@@ -54,7 +54,7 @@
 		1006C35CDD46DDA6EC67578E /* productionProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = productionProfile.xcconfig; path = Flutter/productionProfile.xcconfig; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
-		19850FD2F9C633C4BD4FD3B5 /* simpsonsviewerLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = simpsonsviewerLaunchScreen.storyboard; path = Runner/simpsonsviewerLaunchScreen.storyboard; sourceTree = "<group>"; };
+		19850FD2F9C633C4BD4FD3B5 /* simpsonsviewerLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = simpsonsviewerLaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD504F37A5FF941CD2EB878 /* Pods-Runner.debug-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-development.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-development.xcconfig"; sourceTree = "<group>"; };
 		1D3D2278A7272B47BE8675C5 /* developmentRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = developmentRelease.xcconfig; path = Flutter/developmentRelease.xcconfig; sourceTree = "<group>"; };
 		1D9943AD03891BDB9AEB8A06 /* Pods-Runner.debug-wireviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-wireviewer.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-wireviewer.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		2B04F99130637E7DC3CFC26E /* stagingRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stagingRelease.xcconfig; path = Flutter/stagingRelease.xcconfig; sourceTree = "<group>"; };
 		2C53E06F70F0A1F22A147618 /* Pods-Runner.profile-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-development.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-development.xcconfig"; sourceTree = "<group>"; };
 		382F877D643EAC84C033890F /* Pods-Runner.profile-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-production.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-production.xcconfig"; sourceTree = "<group>"; };
-		3AB92C8D2AD0BEF92F4542F1 /* productionLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = productionLaunchScreen.storyboard; path = Runner/productionLaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AB92C8D2AD0BEF92F4542F1 /* productionLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = productionLaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		43BD98D911D803FF3D4F499D /* Pods-Runner.profile-wireviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-wireviewer.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-wireviewer.xcconfig"; sourceTree = "<group>"; };
 		4BC3B70F59F0E080D7E433C3 /* Pods-Runner.release-wireviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-wireviewer.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-wireviewer.xcconfig"; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7788B02956EEDA08AD82648B /* Pods-Runner.profile-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile-staging.xcconfig"; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
-		8498DB01BDD42BB02B674544 /* stagingLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = stagingLaunchScreen.storyboard; path = Runner/stagingLaunchScreen.storyboard; sourceTree = "<group>"; };
+		8498DB01BDD42BB02B674544 /* stagingLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = stagingLaunchScreen.storyboard; sourceTree = "<group>"; };
 		88E8F50C958ABDBC18A1656E /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		932D24C133F9E25725A42476 /* developmentLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = developmentLaunchScreen.storyboard; path = Runner/developmentLaunchScreen.storyboard; sourceTree = "<group>"; };
+		932D24C133F9E25725A42476 /* developmentLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = developmentLaunchScreen.storyboard; sourceTree = "<group>"; };
 		963BDB1B5CEDE615B617774B /* productionRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = productionRelease.xcconfig; path = Flutter/productionRelease.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		C619A58CC7BBC34C1BF62239 /* stagingProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stagingProfile.xcconfig; path = Flutter/stagingProfile.xcconfig; sourceTree = "<group>"; };
 		CB4ABF0AA9980D6B37DA37ED /* Pods-Runner.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-staging.xcconfig"; sourceTree = "<group>"; };
 		CBB427C7F6E0C64224649488 /* simpsonsviewerProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = simpsonsviewerProfile.xcconfig; path = Flutter/simpsonsviewerProfile.xcconfig; sourceTree = "<group>"; };
-		D87BE98F6EAD0308C104A4FB /* wireviewerLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = wireviewerLaunchScreen.storyboard; path = Runner/wireviewerLaunchScreen.storyboard; sourceTree = "<group>"; };
+		D87BE98F6EAD0308C104A4FB /* wireviewerLaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = wireviewerLaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF40D28F6DC288758A652D2D /* simpsonsviewerDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = simpsonsviewerDebug.xcconfig; path = Flutter/simpsonsviewerDebug.xcconfig; sourceTree = "<group>"; };
 		F0E2629C8D09E9C51E66E0D9 /* wireviewerDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = wireviewerDebug.xcconfig; path = Flutter/wireviewerDebug.xcconfig; sourceTree = "<group>"; };
 		F2760DBC242CC5C6E129FB8A /* developmentProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = developmentProfile.xcconfig; path = Flutter/developmentProfile.xcconfig; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 				43BD98D911D803FF3D4F499D /* Pods-Runner.profile-wireviewer.xcconfig */,
 				7788B02956EEDA08AD82648B /* Pods-Runner.profile-staging.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -176,11 +175,6 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
-				19850FD2F9C633C4BD4FD3B5 /* simpsonsviewerLaunchScreen.storyboard */,
-				D87BE98F6EAD0308C104A4FB /* wireviewerLaunchScreen.storyboard */,
-				932D24C133F9E25725A42476 /* developmentLaunchScreen.storyboard */,
-				3AB92C8D2AD0BEF92F4542F1 /* productionLaunchScreen.storyboard */,
-				8498DB01BDD42BB02B674544 /* stagingLaunchScreen.storyboard */,
 				83C50C9CFDBFF6EB35E78623 /* Pods */,
 				2CCEEA57BF9434ED2E8FE24C /* Frameworks */,
 			);
@@ -200,6 +194,11 @@
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				19850FD2F9C633C4BD4FD3B5 /* simpsonsviewerLaunchScreen.storyboard */,
+				D87BE98F6EAD0308C104A4FB /* wireviewerLaunchScreen.storyboard */,
+				932D24C133F9E25725A42476 /* developmentLaunchScreen.storyboard */,
+				3AB92C8D2AD0BEF92F4542F1 /* productionLaunchScreen.storyboard */,
+				8498DB01BDD42BB02B674544 /* stagingLaunchScreen.storyboard */,
 				97C147021CF9000F007C117D /* Info.plist */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
@@ -487,6 +486,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = productionLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,6 +620,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = productionLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,6 +646,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = productionLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,6 +727,8 @@
 				FLAVOR_APP_NAME = "[DEV] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = developmentLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -799,6 +806,8 @@
 				FLAVOR_APP_NAME = "[DEV] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = developmentLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -873,6 +882,8 @@
 				FLAVOR_APP_NAME = "[DEV] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = developmentLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -952,6 +963,8 @@
 				FLAVOR_APP_NAME = "[STG] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = stagingLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1029,6 +1042,8 @@
 				FLAVOR_APP_NAME = "[STG] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = stagingLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1103,6 +1118,8 @@
 				FLAVOR_APP_NAME = "[STG] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = stagingLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1182,6 +1199,8 @@
 				FLAVOR_APP_NAME = "Simpsons Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = simpsonsviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1262,6 +1281,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = wireviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1339,6 +1360,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = wireviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1415,6 +1438,8 @@
 				FLAVOR_APP_NAME = "Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = simpsonsviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1489,6 +1514,8 @@
 				FLAVOR_APP_NAME = "[DEV] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = simpsonsviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1563,6 +1590,8 @@
 				FLAVOR_APP_NAME = "[DEV] Show Characters Viewer";
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LAUNCH_SCREEN_STORYBOARD = "";
+				"LAUNCH_SCREEN_STORYBOARD[arch=*]" = wireviewerLaunchScreen;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

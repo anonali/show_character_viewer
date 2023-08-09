@@ -13,7 +13,8 @@ class TabletLayout extends HookConsumerWidget {
       children: [
         const Expanded(child: Home()), // The main home widget on the left side.
         const VerticalDivider(),
-        // If a character is selected, show the character view on the right. Otherwise, show a placeholder.
+        // If a character is selected, show the character view on the right.
+        // Otherwise, show a placeholder.
         Expanded(
           child: selectedCharacter != null
               ? ProviderScope(
@@ -24,7 +25,7 @@ class TabletLayout extends HookConsumerWidget {
                 )
               : const Center(
                   child: Scaffold(
-                    body: Center(child: Text("Please select a character")),
+                    body: Center(child: Text('Please select a character')),
                   ),
                 ),
         ),
