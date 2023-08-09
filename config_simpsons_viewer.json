@@ -1,4 +1,4 @@
-
-   {
-    "CHARACTER_VIEWER_API": "http://api.duckduckgo.com/?q=simpsons+characters&format=json"
-   }
+{
+   "CHARACTER_VIEWER_API": "http://api.duckduckgo.com/?q=simpsons+characters&format=json",
+   "APP_DISPLAY_NAME": "Simpsons\u00A0Character\u00A0Viewer"
+}

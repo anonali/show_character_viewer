@@ -22,4 +22,32 @@ flavors:
     ios:
       bundleId: "com.sample.wireviewer"
 
+  development:
+    app:
+      name: "Dev Character Viewer"
+
+    android:
+      applicationId: "com.sample.dev"
+    ios:
+      bundleId: "com.sample.dev"
+
+  production:
+    app:
+      name: "Prod Character Viewer"
+
+    android:
+      applicationId: "com.sample.prod"
+    ios:
+      bundleId: "com.sample.prod"
+
+  staging:
+    app:
+      name: "Staging Character Viewer"
+
+    android:
+      applicationId: "com.sample.stg"
+    ios:
+      bundleId: "com.sample.stg"
+
+
 ide: vscode

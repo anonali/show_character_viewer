@@ -1,3 +1,4 @@
    {
-    "CHARACTER_VIEWER_API": "http://api.duckduckgo.com/?q=the+wire+characters&format=json"
+    "CHARACTER_VIEWER_API": "http://api.duckduckgo.com/?q=the+wire+characters&format=json",
+    "APP_DISPLAY_NAME": "The\u00A0Wire\u00A0Character\u00A0Viewer"
    }

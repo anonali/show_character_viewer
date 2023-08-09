@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 enum Flavor {
   simpsonsviewer,
   wireviewer,
+  development,
+  production,
+  staging,
 }
 
 class F {
@@ -16,8 +19,14 @@ class F {
         return 'Simpsons Character Viewer';
       case Flavor.wireviewer:
         return 'The Wire Character Viewer';
+      case Flavor.development:
+        return 'The Wire Character Viewer';
+      case Flavor.production:
+        return 'The Wire Character Viewer';
+      case Flavor.staging:
+        return 'The Wire Character Viewer';
       default:
-        return 'Test';
+        return 'title';
     }
   }
 
@@ -28,7 +37,7 @@ class F {
       case Flavor.wireviewer:
         return 'https://static01.nyt.com/images/2008/03/10/arts/wiresec.jpg';
       default:
-        return 'https://static01.nyt.com/images/2008/03/10/arts/wiresec.jpg';
+        return 'https://cdn-images-1.medium.com/v2/resize:fit:1200/1*5-aoK8IBmXve5whBQM90GA.png';
     }
   }
 
@@ -46,11 +55,11 @@ class F {
   static String get searchHint {
     switch (appFlavor) {
       case Flavor.simpsonsviewer:
-        return 'Homer Simpson';
+        return 'Homer Simpson...';
       case Flavor.wireviewer:
-        return 'Omar Little';
+        return 'Omar Little...';
       default:
-        return 'Enter a selection';
+        return 'Enter a selection...';
     }
   }
 }

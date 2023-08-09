@@ -6,7 +6,7 @@
         "request": "launch",
         "type": "dart",
         "flutterMode": "debug",
-        "args": ["--dart-define-from-file=config_simpsons_viewer.json", "--flavor", "simpsonsviewer"],
+        "args": ["--dart-define-from-file=config_simpsons_viewer.json", "--flavor", "simpsonsviewer"], 
         "program": "lib/main_simpsonsviewer.dart"
       },
       {
@@ -46,8 +46,80 @@
         "request": "launch",
         "type": "dart",
         "flutterMode": "release",
-        "args": ["--dart-define-from-file=config_wire_viewer.json", "--flavor", "wireviewer"],
+        "args": ["--dart-define-from-file=config_wire_viewer.json","--flavor", "wireviewer"],
         "program": "lib/main_wireviewer.dart"
+      },
+      {
+        "name": "development Debug",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": ["--dart-define-from-file=config_character_viewer_dev.json","--flavor", "development"],
+        "program": "lib/main_development.dart"
+      },
+      {
+        "name": "development Profile",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["--dart-define-from-file=config_character_viewer_dev.json","--flavor", "development"],
+        "program": "lib/main_development.dart"
+      },
+      {
+        "name": "development Release",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["--dart-define-from-file=config_character_viewer.dev.json","--flavor", "development"],
+        "program": "lib/main_development.dart"
+      },
+      {
+        "name": "production Debug",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": ["--dart-define-from-file=config_character_viewer.prod.json","--flavor", "production"],
+        "program": "lib/main_production.dart"
+      },
+      {
+        "name": "production Profile",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["--dart-define-from-file=config_character_viewer.prod${fileBasename}.json","--flavor", "production"],
+        "program": "lib/main_production.dart"
+      },
+      {
+        "name": "production Release",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["--dart-define-from-file=config_character_viewer_prod.json","--flavor", "production"],
+        "program": "lib/main_production.dart"
+      },
+      {
+        "name": "staging Debug",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "args": ["--dart-define-from-file=config_character_viewer_stg.json","--flavor", "staging"],
+        "program": "lib/main_staging.dart"
+      },
+      {
+        "name": "staging Profile",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["--dart-define-from-file=config_character_viewer_stg.json","--flavor", "staging"],
+        "program": "lib/main_staging.dart"
+      },
+      {
+        "name": "staging Release",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["--dart-define-from-file=config_character_stg.json","--flavor", "staging"],
+        "program": "lib/main_staging.dart"
       }
     ]
   }
