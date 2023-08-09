@@ -55,7 +55,7 @@ pod install
 cd ..
 ```
 ```dart
-dart run build_runner build
+dart run build_runner build --delete-conflicting-outputs
 ```
 ```dart
 dart run flutter_flavorizr
