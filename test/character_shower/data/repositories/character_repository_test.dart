@@ -33,6 +33,7 @@ void main() {
 
     // ignore: unnecessary_await_in_return
     expect(
+      // ignore: unnecessary_await_in_return
       () async => await repository.fetchCharacters(),
       throwsA(isA<DioException>()),
     );
