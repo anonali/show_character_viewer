@@ -24,7 +24,12 @@
     "simpsonsviewer",
     "wireviewer",
     "themeing",
-    "listvview",
-    "tappable"
+    "listview",
+    "tappable",
+    "flavorizr",
+    "Flavorizr",
+    "deintegrate",
+    "Riverpod",
+    "riverpod"
   ]
 }

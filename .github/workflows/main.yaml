@@ -1,4 +1,4 @@
-name: there_app
+name: show_characters_viewer
 
 concurrency:
   group: $-$
