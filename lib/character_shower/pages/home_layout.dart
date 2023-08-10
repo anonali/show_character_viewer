@@ -222,7 +222,9 @@ class CharacterItem extends HookConsumerWidget {
                   .selectCharacter(character.hash ?? '');
             } else {
               await Navigator.pushNamed(
-                  context, '/characters/${character.hash}',);
+                context,
+                '/characters/${character.hash}',
+              );
             }
           },
           child: Card(
