@@ -57,15 +57,14 @@ cd ..
 ```dart
 dart run build_runner build --delete-conflicting-outputs
 ```
-```dart
-dart run flutter_flavorizr
-```
+
 
 
 ## Notes
-- I am using the Flutter Flavorizr package to handle the app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
-- I elected not to pass the API urls by hardcoding with this package and instead created two respective config.json files which I pass using --dart-define-from-file as an argument at compile time.
-- Some other packages heavily used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using code generation for model classes as witnessed by the widespread usage of the Freezed package.
+- I am using the Flutter Flavorizr package to handle app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
+- I elected to not pass the API urls by hardcoding with Flavorizr and instead created two ..._config.json files which I pass using --dart-define-from-file as an argument when compile compiling.
+- Some other packages used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using freezed code generation for classes.
+- GitHub Actions include the skeleton from Very Good Core and 30% test coverage. 
 
 
 
