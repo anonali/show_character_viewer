@@ -31,8 +31,11 @@ void main() {
         ProviderContainer(overrides: [dioProvider.overrideWithValue(fakeDio)]);
     final repository = container.read(repositoryProvider);
 
-    expect(() async => await repository.fetchCharacters(),
-        throwsA(isA<DioException>()));
+    // ignore: unnecessary_await_in_return
+    expect(
+      () async => await repository.fetchCharacters(),
+      throwsA(isA<DioException>()),
+    );
 
     container.dispose();
   });

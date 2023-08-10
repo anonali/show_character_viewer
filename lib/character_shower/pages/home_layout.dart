@@ -1,3 +1,5 @@
+// ignore_for_file: use_setters_to_change_properties
+
 import 'dart:convert';
 
 import 'package:crypto/crypto.dart';
@@ -60,8 +62,7 @@ final selectedCharacterProvider =
 // A custom SliverAppBar that changes its title color based on the
 // scroll offset.
 class AnimatedColorSliverAppBar extends HookWidget {
-  const AnimatedColorSliverAppBar({required this.scrollController, Key? key})
-      : super(key: key);
+  const AnimatedColorSliverAppBar({required this.scrollController, super.key});
 
   final ScrollController scrollController;
 
@@ -108,8 +109,7 @@ class AnimatedColorSliverAppBar extends HookWidget {
 
 // A SliverList widget to display the list of characters.
 class CharacterSliverList extends ConsumerWidget {
-  const CharacterSliverList({required this.itemCount, Key? key})
-      : super(key: key);
+  const CharacterSliverList({required this.itemCount, super.key});
   final int itemCount;
 
   @override
@@ -133,13 +133,14 @@ class CharacterSliverList extends ConsumerWidget {
 // The main Home widget that displays either a loading spinner, error message,
 // or the list of characters.
 class Home extends HookConsumerWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final scrollController = useScrollController();
 
     return ref.watch(charactersProvider).when(
+          // ignore: use_colored_box
           loading: () => Container(
             color: F.theme.primaryColorDark,
             child: const Center(child: CircularProgressIndicator()),
@@ -187,7 +188,7 @@ final _characterIndex = Provider<int>((ref) => throw UnimplementedError());
 
 // A widget to display individual character details.
 class CharacterItem extends HookConsumerWidget {
-  const CharacterItem({Key? key}) : super(key: key);
+  const CharacterItem({super.key});
 
   String generateMd5(String input) {
     return md5.convert(utf8.encode(input)).toString();
@@ -220,7 +221,8 @@ class CharacterItem extends HookConsumerWidget {
                   .read(selectedCharacterProvider.notifier)
                   .selectCharacter(character.hash ?? '');
             } else {
-              Navigator.pushNamed(context, '/characters/${character.hash}');
+              await Navigator.pushNamed(
+                  context, '/characters/${character.hash}');
             }
           },
           child: Card(

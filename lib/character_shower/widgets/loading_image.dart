@@ -6,8 +6,8 @@ class LoadingImage extends StatelessWidget {
   // Constructor to accept the image URL.
   const LoadingImage({
     required this.url,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   // URL of the image to be displayed.
   final String url;

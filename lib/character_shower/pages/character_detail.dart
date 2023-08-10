@@ -19,7 +19,7 @@ final character =
 });
 
 class CharacterView extends HookConsumerWidget {
-  const CharacterView({Key? key}) : super(key: key);
+  const CharacterView({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
