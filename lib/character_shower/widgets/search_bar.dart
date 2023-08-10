@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_positional_boolean_parameters, use_setters_to_change_properties, lines_longer_than_80_chars, flutter_style_todos
+
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_portal/flutter_portal.dart';
@@ -70,11 +72,12 @@ class PreventNavigationNotifier extends StateNotifier<bool> {
 
 final preventNavigationProvider =
     StateNotifierProvider<PreventNavigationNotifier, bool>(
-        (ref) => PreventNavigationNotifier());
+  (ref) => PreventNavigationNotifier(),
+);
 
 // The primary search bar widget.
 class SearchBar extends HookConsumerWidget {
-  const SearchBar({Key? key}) : super(key: key);
+  const SearchBar({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -88,24 +91,27 @@ class SearchBar extends HookConsumerWidget {
 
     final textFocusNode = useFocusNode();
     final textEditingController = useTextEditingController();
-    useEffect(() {
-      void handleFocusChange() {
-        if (!searchFocusNode.hasFocus) {
-          textEditingController.clear();
-          // Setting the flag to true for a short duration when search bar loses focus
-          ref.read(preventNavigationProvider.notifier).toggle(true);
-          Future.delayed(const Duration(milliseconds: 500), () {
-            ref.read(preventNavigationProvider.notifier).toggle(false);
-          });
+    useEffect(
+      () {
+        void handleFocusChange() {
+          if (!searchFocusNode.hasFocus) {
+            textEditingController.clear();
+            // Setting the flag to true for a short duration when search bar loses focus
+            ref.read(preventNavigationProvider.notifier).toggle(true);
+            Future.delayed(const Duration(milliseconds: 500), () {
+              ref.read(preventNavigationProvider.notifier).toggle(false);
+            });
+          }
+          ref
+              .read(searchBarFocusProvider.notifier)
+              .focusChanged(searchFocusNode.hasFocus);
         }
-        ref
-            .read(searchBarFocusProvider.notifier)
-            .focusChanged(searchFocusNode.hasFocus);
-      }
 
-      searchFocusNode.addListener(handleFocusChange);
-      return () => searchFocusNode.removeListener(handleFocusChange);
-    }, [searchFocusNode]);
+        searchFocusNode.addListener(handleFocusChange);
+        return () => searchFocusNode.removeListener(handleFocusChange);
+      },
+      [searchFocusNode],
+    );
     // Animation for showing and hiding search hints.
     final hints = TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 150),
@@ -145,8 +151,9 @@ class SearchBar extends HookConsumerWidget {
               child: PortalTarget(
                 visible: width > 40 || searchFocusNode.hasFocus,
                 anchor: const Aligned(
-                    follower: Alignment.topCenter,
-                    target: Alignment.bottomCenter),
+                  follower: Alignment.topCenter,
+                  target: Alignment.bottomCenter,
+                ),
                 portalFollower: SizedBox(width: width, child: hints),
                 child: searchField,
               ),
@@ -162,8 +169,7 @@ class SearchBar extends HookConsumerWidget {
 class _SearchHints extends HookConsumerWidget {
   const _SearchHints({
     required this.textEditingController,
-    Key? key,
-  }) : super(key: key);
+  });
 
   final TextEditingController textEditingController;
 
@@ -183,7 +189,7 @@ class _SearchHints extends HookConsumerWidget {
     final deviceService = ref.read(deviceServiceProvider);
 
     if (count == 0) {
-      return const Center(child: Text("No characters found"));
+      return const Center(child: Text('No characters found'));
     }
 
     return ListView.separated(
@@ -193,9 +199,11 @@ class _SearchHints extends HookConsumerWidget {
       itemBuilder: (context, index) {
         return HookConsumer(
           builder: (context, ref, child) {
-            final character = ref.watch(characterAtOffset(
-              CharacterOffset(offset: index, text: search),
-            ));
+            final character = ref.watch(
+              characterAtOffset(
+                CharacterOffset(offset: index, text: search),
+              ),
+            );
 
             return ListTile(
               onTap: () {
@@ -217,7 +225,7 @@ class _SearchHints extends HookConsumerWidget {
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               contentPadding:
-                  const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             );
           },
         );
@@ -231,8 +239,7 @@ class _SearchHintContainer extends StatelessWidget {
   const _SearchHintContainer({
     required this.theme,
     required this.child,
-    Key? key,
-  }) : super(key: key);
+  });
 
   final _SearchTheme theme;
   final Widget child;
@@ -265,8 +272,7 @@ class _SearchbarView extends StatelessWidget {
     required this.isFocused,
     required this.textEditingController,
     required this.textFocusNode,
-    Key? key,
-  }) : super(key: key);
+  });
 
   final _SearchTheme theme;
   final bool isFocused;

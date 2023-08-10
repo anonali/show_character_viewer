@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:dio/dio.dart';
 import 'package:mockito/mockito.dart';
 
@@ -20,7 +22,6 @@ class FakeDio extends Mock implements Dio {
     if (throwError) {
       // If throwError is true, then throw a DioException
       throw DioException(
-        response: null,
         requestOptions: RequestOptions(path: path),
         error: 'Simulated network error',
       );
