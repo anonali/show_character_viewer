@@ -7,7 +7,7 @@ A casual "TV show character" browsing app that securely deploys onto both iOS an
 
 ## Features
 
-- Ability to choose between a "Simpsons Character Viewer" and "The Wire Character Viewer", or develpopment, staging or production of the white-label
+- Ability to choose between a "Simpsons Character Viewer" and "The Wire Character Viewer", or develpoment, staging or production of the white-label
 - Both apps share the same codebase, but have differing API endpoints and unique properties (such as the show name, placeholder images, and some very light themeing)
 - Base environment setup using Very Good Cli
 - Search bar built using Flutter Portal, with flagging functionality (in the case user taps on a tappable gesture item when trying to lose focus from the search bar)
