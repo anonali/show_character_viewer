@@ -57,9 +57,7 @@ cd ..
 ```dart
 dart run build_runner build --delete-conflicting-outputs
 ```
-```dart
-dart run flutter_flavorizr
-```
+
 
 
 ## Notes
