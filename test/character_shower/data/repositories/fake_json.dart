@@ -92,7 +92,7 @@ const mockResponseData = {
           'Wendy Sage - Dr. Wendy Sage is a fictional character on the television animated sitcom The Simpsons. She works as a hypnotherapist and she is also a breast cancer survivor. She visibly has one of her breasts removed.'
     }
   ],
-  'Results': [],
+  'Results': [''],
   'Type': 'C',
   'meta': {
     'attribution': null,
