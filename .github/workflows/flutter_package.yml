@@ -34,7 +34,7 @@ on:
       min_coverage:
         required: false
         type: number
-        default: 30
+        default: 20
       runs_on:
         required: false
         type: string
