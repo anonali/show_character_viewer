@@ -3,7 +3,7 @@
 # Show Character Viewer
 
 
-A casual "TV show character" browsing app that securely deploys onto both iOS and Android using different build configurations & flavors 
+A casual "TV show character" browsing app that securely (for a frontend) deploys onto both iOS and Android using different build configurations & flavors 
 
 ## Features
 
