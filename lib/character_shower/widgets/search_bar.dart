@@ -234,6 +234,7 @@ class _SearchHints extends HookConsumerWidget {
   }
 }
 
+// ignore: todo
 // TODO: Update queries and filter the list based on names being queries first in the list and then queries containing matching data in description after
 class _SearchHintContainer extends StatelessWidget {
   const _SearchHintContainer({
