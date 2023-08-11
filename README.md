@@ -10,7 +10,7 @@ A casual "TV show character" browsing app that securely (for a frontend) deploys
 - Ability to choose between a "Simpsons Character Viewer" and "The Wire Character Viewer"; or development, staging, production version of the white-label master app
 - Both apps share the same codebase, but have differing API endpoints and unique properties (such as the show name, placeholder images, and some very light themeing)
 - Base environment setup using Very Good Core
-- Search bar built using Flutter Portal, with flagging functionality (in the case user taps on a tappable gesture item when trying to lose focus from the search bar)
+- Search bar with hints built with Flutter Portal 
 - Two unique app experiences based on device type. If mobile, tapping on a list item generates a new route, if tablet, tap selection populates the side-screen, 
 - Sliver listview supports refreshing, just drag down on the list and then release.
 - When a list is fetched, it is cached until no longer needed. Scroll to refresh.
