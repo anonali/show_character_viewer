@@ -100,6 +100,7 @@ class CharacterRepository {
       // Make the API request using the Dio client.
       final result =
 
+          // ignore: todo
           // TODO: consider refactoring
           // ignore: inference_failure_on_function_invocation
           await ref.read(dioProvider).get(url, cancelToken: cancelToken);
@@ -113,6 +114,7 @@ class CharacterRepository {
       } else if (result.data is Map<String, dynamic>) {
         responseData = result.data as Map<String, dynamic>;
       } else {
+        // ignore: todo
         // TODO: consider refactoring
         // ignore: avoid_dynamic_calls
         throw Exception('Unexpected data type: ${result.data.runtimeType}');
