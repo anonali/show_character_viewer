@@ -14,7 +14,7 @@ A casual "TV show character" browsing app that securely (for a frontend) deploys
 - Two unique app experiences based on device type. If mobile, tapping on a list item generates a new route, if tablet, tap selection populates the side-screen, 
 - Sliver listview supports refreshing, just drag down on the list and then release.
 - When a list is fetched, it is cached until no longer needed. Scroll to refresh.
-- Repository to handle all the networking, including services to process data before showing to user as APIs do not return clean and clear data. 
+- Repository to handle all the networking, including services to process data before showing to user.
 - Includes some light tests. Priority was given to testing the get request and checking the error handling of the repository. Additional tests to come in the future.
 - Icon, launchers and splash screens setup for all platforms
 - Includes tests for device layout, checking if correct view is returned.
