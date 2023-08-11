@@ -40,6 +40,7 @@ void main() {
       );
     }
 
+    // success if app device view is mobile:
     testWidgets('Renders correctly on Mobile', (tester) async {
       await tester.pumpWidget(buildTestApp(mockDeviceServiceMobile));
 
@@ -49,6 +50,7 @@ void main() {
       );
     });
 
+    // success if app device view is tablet:
     testWidgets('Renders correctly on Tablet', (tester) async {
       await tester.pumpWidget(buildTestApp(mockDeviceServiceTablet));
 
