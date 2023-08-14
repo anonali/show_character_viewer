@@ -5,7 +5,6 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
