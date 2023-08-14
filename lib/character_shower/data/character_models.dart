@@ -3,8 +3,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
-part 'character_shower_models.freezed.dart';
-part 'character_shower_models.g.dart';
+part 'character_models.freezed.dart';
+part 'character_models.g.dart';
 
 @freezed
 class CharacterOffset with _$CharacterOffset {

@@ -4,10 +4,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
-final selectedCharacterId = Provider<String>((ref) {
-  throw UnimplementedError();
-});
-
 final character =
     FutureProvider.autoDispose.family<NewCharacter, String>((ref, hash) async {
   final repository = ref.watch(repositoryProvider);

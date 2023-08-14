@@ -1,3 +1,3 @@
-export '../data/character_shower_models.dart';
-export '../data/repositories/characters_repository.dart';
+export '../data/character_models.dart';
 export '../data/result.dart';
+export '../providers/characters_repository.dart';
