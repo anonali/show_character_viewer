@@ -45,7 +45,7 @@ void main() {
       await tester.pumpWidget(buildTestApp(mockDeviceServiceMobile));
 
       expect(
-        find.byType(Home),
+        find.byType(SearchPage),
         findsOneWidget,
       );
     });
