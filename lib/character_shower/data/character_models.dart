@@ -123,3 +123,11 @@ class CharacterData with _$CharacterData {
   // Getter method to retrieve the total number of related topics.
   int get total => relatedTopics.length;
 }
+
+// Freezed class to handle character indexing.
+@freezed
+class CharacterIndex with _$CharacterIndex {
+  factory CharacterIndex({
+    required int index,
+  }) = _CharacterIndex;
+}

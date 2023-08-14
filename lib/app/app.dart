@@ -33,7 +33,7 @@ class App extends HookConsumerWidget {
             overrides: [
               selectedCharacterId.overrideWithValue(split.last),
             ],
-            child: const CharacterView(),
+            child: const CharcterDetail(),
           );
         }
 
@@ -43,7 +43,7 @@ class App extends HookConsumerWidget {
         return MaterialPageRoute<void>(builder: (context) => result!);
       },
       routes: {
-        '/character': (c) => const CharacterView(),
+        '/character': (c) => const CharcterDetail(),
       },
     );
   }

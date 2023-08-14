@@ -1,13 +1,3 @@
-// // ignore_for_file: flutter_style_todos
-
-// import 'package:dio/dio.dart';
-// import 'package:riverpod_annotation/riverpod_annotation.dart';
-
-// part 'character_shower_providers.g.dart';
-
-// @riverpod
-// Dio dio(DioRef ref) => Dio();
-
 // Provider to fetch a list of characters.
 import 'package:dio/dio.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -54,3 +44,13 @@ final selectedCharacterProvider =
 
 // Provider for the Dio HTTP client.
 final dioProvider = Provider((ref) => Dio());
+
+final character =
+    FutureProvider.autoDispose.family<NewCharacter, String>((ref, hash) async {
+  final repository = ref.watch(repositoryProvider);
+  final character = await repository.fetchCharacterByHash(hash);
+
+  /// Cache the Character once it is successfully obtained.
+  ref.keepAlive();
+  return character;
+});

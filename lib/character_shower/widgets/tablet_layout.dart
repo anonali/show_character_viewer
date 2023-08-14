@@ -23,7 +23,7 @@ class TabletLayout extends HookConsumerWidget {
                   overrides: [
                     selectedCharacterId.overrideWithValue(selectedCharacter),
                   ],
-                  child: const CharacterView(),
+                  child: const CharcterDetail(),
                 )
               : const Center(
                   child: Scaffold(

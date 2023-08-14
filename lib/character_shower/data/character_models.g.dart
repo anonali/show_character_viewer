@@ -1,7 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-// ignore_for_file: non_constant_identifier_names
-
 part of 'character_models.dart';
 
 // **************************************************************************
@@ -21,8 +19,7 @@ Map<String, dynamic> _$$_CharacterOffsetToJson(_$_CharacterOffset instance) =>
     };
 
 _$_CharactersListResponse _$$_CharactersListResponseFromJson(
-  Map<String, dynamic> json,
-) =>
+        Map<String, dynamic> json) =>
     _$_CharactersListResponse(
       characters: (json['characters'] as List<dynamic>)
           .map((e) => NewCharacter.fromJson(e as Map<String, dynamic>))
@@ -31,8 +28,7 @@ _$_CharactersListResponse _$$_CharactersListResponseFromJson(
     );
 
 Map<String, dynamic> _$$_CharactersListResponseToJson(
-  _$_CharactersListResponse instance,
-) =>
+        _$_CharactersListResponse instance) =>
     <String, dynamic>{
       'characters': instance.characters,
       'totalCount': instance.totalCount,
@@ -82,8 +78,7 @@ _$_CharacterResponse _$$_CharacterResponseFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$_CharacterResponseToJson(
-  _$_CharacterResponse instance,
-) =>
+        _$_CharacterResponse instance) =>
     <String, dynamic>{
       'RelatedTopics': instance.relatedTopics,
     };

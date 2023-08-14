@@ -4,18 +4,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
-final character =
-    FutureProvider.autoDispose.family<NewCharacter, String>((ref, hash) async {
-  final repository = ref.watch(repositoryProvider);
-  final character = await repository.fetchCharacterByHash(hash);
-
-  /// Cache the Character once it is successfully obtained.
-  ref.keepAlive();
-  return character;
-});
-
-class CharacterView extends HookConsumerWidget {
-  const CharacterView({super.key});
+class CharcterDetail extends HookConsumerWidget {
+  const CharcterDetail({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

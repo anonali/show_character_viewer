@@ -10,20 +10,10 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
-part 'search.freezed.dart';
+// part 'search.freezed.dart';
 
 // Custom exception class to handle specific cases when a process is aborted.
 class AbortedException implements Exception {}
-
-// Freezed class to handle character indexing.
-@freezed
-class CharacterIndex with _$CharacterIndex {
-  factory CharacterIndex({
-    required int index,
-  }) = _CharacterIndex;
-}
-
-// Widget layout specifically designed for tablets.
 
 // A custom SliverAppBar that changes its title color based on the
 // scroll offset.
