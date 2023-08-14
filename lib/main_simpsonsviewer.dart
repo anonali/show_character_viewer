@@ -27,9 +27,6 @@ void main() {
   );
 }
 
-
-
-
 // import 'package:show_characters_viewer/flavors.dart';
 
 // import 'package:show_characters_viewer/main.dart' as runner;
