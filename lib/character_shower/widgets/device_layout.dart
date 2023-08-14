@@ -15,7 +15,7 @@ class DeviceLayout extends HookConsumerWidget {
     final isMobileDevice = deviceService.isMobileDevice();
 
     if (isMobileDevice) {
-      return const Portal(child: Home());
+      return const Portal(child: SearchPage());
     } else {
       return const Portal(child: TabletLayout());
     }

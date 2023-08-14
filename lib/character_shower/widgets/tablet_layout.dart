@@ -11,7 +11,8 @@ class TabletLayout extends HookConsumerWidget {
 
     return Row(
       children: [
-        const Expanded(child: Home()), // The main home widget on the left side.
+        const Expanded(
+            child: SearchPage()), // The main home widget on the left side.
         const VerticalDivider(),
         // If a character is selected, show the character view on the right.
         // Otherwise, show a placeholder.

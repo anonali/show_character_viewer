@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:mockito/mockito.dart';
-import 'package:show_characters_viewer/app/view/app.dart';
+import 'package:show_characters_viewer/app/app.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 
 class MockDio extends Mock implements Dio {}
@@ -45,7 +45,7 @@ void main() {
       await tester.pumpWidget(buildTestApp(mockDeviceServiceMobile));
 
       expect(
-        find.byType(Home),
+        find.byType(SearchPage),
         findsOneWidget,
       );
     });
