@@ -5,14 +5,12 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:dio/dio.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:show_characters_viewer/character_shower/data/character_shower_models.dart';
+
+import 'package:show_characters_viewer/character_shower/character_shower.dart';
 
 // URL for the API endpoint, retrieved from environment variables.
 // ignore: constant_identifier_names
 const APIURL = String.fromEnvironment('CHARACTER_VIEWER_API');
-
-// Provider for the Dio HTTP client.
-final dioProvider = Provider((ref) => Dio());
 
 // Provider for the CharacterRepository.
 final repositoryProvider = Provider(CharacterRepository.new);

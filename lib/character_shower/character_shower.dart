@@ -1,3 +1,10 @@
-export '../character_shower/data/data.dart';
-export '../character_shower/pages/pages.dart';
-export '../character_shower/widgets/widgets.dart';
+export '../character_shower/data/character_models.dart';
+export '../character_shower/data/result.dart';
+export '../character_shower/pages/character_detail.dart';
+export '../character_shower/pages/search.dart';
+export '../character_shower/providers/character_shower_providers.dart';
+export '../character_shower/providers/characters_repository.dart';
+export '../character_shower/widgets/device_layout.dart';
+export '../character_shower/widgets/loading_image.dart';
+export '../character_shower/widgets/search_bar.dart';
+export '../character_shower/widgets/tablet_layout.dart';

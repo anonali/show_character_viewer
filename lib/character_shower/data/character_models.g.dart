@@ -2,7 +2,7 @@
 
 // ignore_for_file: non_constant_identifier_names
 
-part of 'character_shower_models.dart';
+part of 'character_models.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

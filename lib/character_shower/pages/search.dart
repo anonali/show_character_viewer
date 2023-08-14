@@ -5,59 +5,14 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:show_characters_viewer/character_shower/character_shower.dart';
 import 'package:show_characters_viewer/flavors.dart';
 
-part 'search.freezed.dart';
+// part 'search.freezed.dart';
 
 // Custom exception class to handle specific cases when a process is aborted.
 class AbortedException implements Exception {}
-
-// Provider to fetch a list of characters.
-final charactersProvider = FutureProvider.autoDispose<CharactersListResponse>(
-  (ref) async {
-    final repository = ref.watch(repositoryProvider);
-    return
-        // await // if live network call
-        repository.fetchCharacters();
-  },
-);
-
-// Freezed class to handle character indexing.
-@freezed
-class CharacterIndex with _$CharacterIndex {
-  factory CharacterIndex({
-    required int index,
-  }) = _CharacterIndex;
-}
-
-// Provider to fetch a specific character by index.
-final characterAtIndex = Provider.autoDispose
-    .family<AsyncValue<NewCharacter>, CharacterIndex>((ref, query) {
-  final charactersResponse = ref.watch(charactersProvider);
-
-  return charactersResponse.whenData(
-    (response) => response.characters[query.index],
-  );
-});
-
-// StateNotifier to manage the selected character's state.
-class SelectedCharacterNotifier extends StateNotifier<String?> {
-  SelectedCharacterNotifier() : super(null);
-
-  void selectCharacter(String characterId) {
-    state = characterId;
-  }
-}
-
-final selectedCharacterProvider =
-    StateNotifierProvider<SelectedCharacterNotifier, String?>(
-  (ref) => SelectedCharacterNotifier(),
-);
-
-// Widget layout specifically designed for tablets.
 
 // A custom SliverAppBar that changes its title color based on the
 // scroll offset.
