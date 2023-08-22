@@ -63,6 +63,7 @@ dart run build_runner build --delete-conflicting-outputs
 
 
 ## Notes
+- This app draws inspriation from and reuses code from the offical Riverpod package examples (Marvel + Pub)
 - I am using the Flutter Flavorizr package to handle app name, bundle IDs, as well as specific theme / unique properties relevant to each separate app.
 - I elected to not pass the API urls by hardcoding with Flavorizr and instead created two ..._config.json files which I pass using --dart-define-from-file as an argument when compile compiling.
 - Some other packages used include Riverpod for global state management, flutter_hooks and hooks_riverpod for ephemeral state. I am also using freezed code generation for classes.
